@@ -122,7 +122,7 @@ function noClicked(){
 
         body: JSON.stringify({
 
-            status: "جدی اگه قطعی می خوای بگی نه، اینجا رو بزن. ولی نزن 🙂"
+            status: "نه 🙂"
 
         })
 
