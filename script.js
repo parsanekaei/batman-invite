@@ -256,8 +256,6 @@ fetch("/api/send", {
 
 })
 
-})
-
 .catch(error => {
 
     console.error(error);
