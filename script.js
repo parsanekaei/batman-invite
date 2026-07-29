@@ -228,7 +228,51 @@ dateNextBtn.addEventListener("click", () => {
 };
 
 console.log(meeting);
+    const meeting = {
+
+    date: dateInput.value,
+
+    time: timeInput.value,
+
+    place:
+        placeInput.value === "other"
+        ? customPlace.value
+        : placeInput.value
+
+};
+
+
+fetch("/api/send", {
+
+    method: "POST",
+
+    headers: {
+
+        "Content-Type": "application/json"
+
+    },
+
+    body: JSON.stringify(meeting)
+
+})
+
+.then(response => response.json())
+
+.then(data => {
+
+    console.log("Sent:", data);
+
     showPage(pages.success);
+
+})
+
+.catch(error => {
+
+    console.error(error);
+
+    alert("یه مشکلی پیش اومد 😅");
+
+});
 
 });
 
