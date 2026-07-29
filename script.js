@@ -252,7 +252,6 @@ fetch("/api/send", {
 
     },
 
-    body: JSON.stringify(meeting)
 
 })
 
