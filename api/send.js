@@ -9,14 +9,27 @@ export default async function handler(req, res) {
     }
 
 
-    const { date, time, place } = req.body;
+    const { date, time, place, status } = req.body;
 
 
     const token = process.env.BOT_TOKEN;
     const chatId = process.env.CHAT_ID;
 
 
-    const text = `
+let text;
+
+if(status){
+
+    text = `
+❌ پاسخ جدید
+
+وضعیت:
+${status}
+    `;
+
+}else{
+
+    text = `
 ❤️ پاسخ جدید
 
 📅 تاریخ:
@@ -28,6 +41,8 @@ ${time}
 📍 مکان:
 ${place}
     `;
+
+}
 
 
     const telegramUrl =
