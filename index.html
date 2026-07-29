@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>یه سوال کوچیک 😄</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/persian-datepicker@1.2.0/dist/css/persian-datepicker.min.css">
+
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/persian-date@1.1.0/dist/persian-date.min.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/persian-datepicker@1.2.0/dist/js/persian-datepicker.min.js"></script>
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <div class="card">
+
+        <!-- صفحه اول -->
+
+        <section id="welcomePage" class="page active">
+
+            <h1>سلام 👋</h1>
+
+            <p>
+
+                یه چیز کوچولو ساختم و سعی کردم خیلی خلاقیت نشون بدم 😂
+
+                <br><br>
+
+                فقط قول بده تا آخرش رو بری 😄
+
+            </p>
+
+            <button id="startBtn">
+
+                شروع 🚀
+
+            </button>
+
+        </section>
+
+
+
+        <!-- صفحه سوال -->
+
+        <section id="questionPage" class="page">
+
+            <h1>باهام میای یه روز بریم بیرون؟</h1>
+
+
+            <div class="buttons">
+
+                <button id="yesBtn">باشه</button>
+
+                <button id="noBtn">نه</button>
+
+            </div>
+
+            <p id="message"></p>
+
+        </section>
+
+
+
+        <!-- صفحه جشن -->
+
+        <section id="successPage" class="page">
+
+            <h1>🥳🥳🥳</h1>
+
+            <p>
+
+                مرسییییییییییییی ❤️
+
+                <br><br>
+
+                پس میبینمت. یادت نره هاااا 😁
+            </p>
+
+        </section>
+
+        <section id="datePage" class="page">
+
+    <h1>عالیه 😍🕺</h1>
+
+    <p>حالا کی و کجا بریم؟!</p>
+
+    <h3>📅 تاریخ</h3>
+
+    <input
+        type="text"
+        id="dateInput"
+        placeholder="تاریخ را انتخاب کنید"
+        readonly
+    >
+
+    <br><br>
+
+    <h3>🕒 ساعت</h3>
+
+    <select id="timeInput">
+
+        <option value="">انتخاب ساعت</option>
+
+        <option>16:00</option>
+        <option>17:00</option>
+        <option>18:00</option>
+        <option>19:00</option>
+        <option>20:00</option>
+        <option>21:00</option>
+
+    </select>
+
+    <br><br>
+
+    <h3>📍 کجا بریم؟</h3>
+
+    <select id="placeInput">
+
+        <option value="">انتخاب ... </option>
+
+        <option>☕ کافه</option>
+
+        <option>🍽 رستوران</option>
+
+        <option>🌊 دریا</option>
+
+        <option>🌳 پارک</option>
+
+        <option>🎢😂 شهر بازی</option>
+
+        <option value="other">✍️ خودت انتخاب کن...</option>
+
+    </select>
+
+    <br><br>
+
+    <input
+        type="text"
+        id="customPlace"
+        placeholder="کجا؟؟"
+        style="display:none;"
+    >
+
+    <br><br>
+
+<p id="formError"></p>
+
+    <button id="dateNextBtn">
+
+       بریم
+
+    </button>
+
+</section>
+
+        <!-- صفحه پایان -->
+
+        <section id="endPage" class="page">
+
+
+            <p>
+
+                باشه...
+
+                <br><br>
+
+                خواستم یه بار دیگه هم شانسمو امتحان کنم.
+                البته فکر کنم بازم امتحان کنم 😏
+
+                <br><br>
+
+               تا خلاقیت های دیگه، فعلا 😂
+
+            </p>
+
+        </section>
+
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
