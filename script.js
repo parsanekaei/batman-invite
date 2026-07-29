@@ -228,18 +228,6 @@ dateNextBtn.addEventListener("click", () => {
 };
 
 console.log(meeting);
-    const meeting = {
-
-    date: dateInput.value,
-
-    time: timeInput.value,
-
-    place:
-        placeInput.value === "other"
-        ? customPlace.value
-        : placeInput.value
-
-};
 
 
 fetch("/api/send", {
@@ -252,6 +240,7 @@ fetch("/api/send", {
 
     },
 
+    body: JSON.stringify(meeting)
 
 })
 
