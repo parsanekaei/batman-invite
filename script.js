@@ -248,9 +248,7 @@ fetch("/api/send", {
 
 .then(data => {
 
-    console.log("Telegram response:", data);
-
-    alert(JSON.stringify(data));
+    console.log("Sent:", data);
 
     showPage(pages.success);
 
