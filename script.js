@@ -107,15 +107,37 @@ function noClicked(){
 
             document.getElementById("realNo").onclick=function(e){
 
-                e.preventDefault();
+    e.preventDefault();
 
-                showPage(pages.end);
+
+    fetch("/api/send", {
+
+        method: "POST",
+
+        headers: {
+
+            "Content-Type": "application/json"
+
+        },
+
+        body: JSON.stringify({
+
+            status: "جدی اگه قطعی می خوای بگی نه، اینجا رو بزن. ولی نزن 🙂"
+
+        })
+
+    });
+
+
+    showPage(pages.end);
+
+};
 
             };
 
     }
 
-}
+
 
 function updateButtons(){
 
